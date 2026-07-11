@@ -4,7 +4,18 @@ A top-down action RPG: arcade combat with RPG progression. You are a gladiator c
 
 **Stack:** TypeScript + Phaser 3, browser-first, shipping to itch.io.
 
-**Status:** Pre-code. Design and PRD complete; next step is Milestone 1 (playable skeleton that proves the combat feel).
+**Status:** Milestone 1 (skeleton) built — awaiting the feel-gate playtest. See [`docs/systems/m1-skeleton.md`](docs/systems/m1-skeleton.md).
+
+## Run it
+
+```bash
+npm install
+npm run dev     # dev server with hot reload — open the printed localhost URL
+npm test        # unit tests (combat math, attack schema, input-abstraction lint)
+npm run build   # type-check + production build to dist/
+```
+
+Controls: **WASD/arrows** or **left stick** to move, **J/Space** or **pad A** to punch.
 
 ## Documents
 
@@ -13,6 +24,7 @@ A top-down action RPG: arcade combat with RPG progression. You are a gladiator c
 | [`docs/design-bible.md`](docs/design-bible.md) | Design source of truth: concept, locked decisions, death & mastery model, milestone roadmap (M1–M11), open questions. |
 | [`docs/prd-one-kingdom-slice.md`](docs/prd-one-kingdom-slice.md) | Active PRD for the sellable one-kingdom vertical slice. |
 | [`ENGINEERING_OS.md`](ENGINEERING_OS.md) | How this repo plugs into the [Engineering OS](https://github.com/mattwb44/engineering-os): agents, playbook, templates, journaling. |
+| [`docs/systems/m1-skeleton.md`](docs/systems/m1-skeleton.md) | M1 system notes: architecture decisions, feel-tuning knobs, playtest gate. |
 
 ## Working agreement
 
